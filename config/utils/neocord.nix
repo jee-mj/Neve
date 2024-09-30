@@ -1,6 +1,6 @@
 {
   plugins.neocord = {
-    enable = true;
+    enable = false;
     settings = {
       auto_update = true;
       blacklist = [];
