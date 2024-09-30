@@ -47,8 +47,8 @@
     }
     {
       mode = ["i"];
-      key = "XD";
-      action = "<C-c>";
+      key = "xd";
+      action = "<Esc>";
       options = {
         silent = true;
         noremap = true;
