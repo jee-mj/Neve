@@ -8,7 +8,7 @@
           post = ''
             vim.cmd("colorscheme kanagawa")
           '';
-        }
+        };
 
       settings = {
         compile = false;             # enable compiling the colorscheme
