@@ -9,6 +9,7 @@
     ./colorschemes/base16.nix
     ./colorschemes/catppuccin.nix
     ./colorschemes/cyberdream.nix
+    ./colorschemes/kanagawa.nix
     ./colorschemes/rose-pine.nix
 
     ./completion/cmp.nix
