@@ -6,12 +6,13 @@
 
     ./bufferlines/bufferline.nix
 
-#     ./colorschemes/base16.nix
-#     ./colorschemes/catppuccin.nix
-#     ./colorschemes/rose-pine.nix
+    ./colorschemes/base16.nix
+    ./colorschemes/catppuccin.nix
+    ./colorschemes/cyberdream.nix
+    ./colorschemes/rose-pine.nix
 
     ./completion/cmp.nix
-#     ./completion/copilot.nix
+    ./completion/copilot.nix
     ./completion/lspkind.nix
 
     ./dap/dap.nix
