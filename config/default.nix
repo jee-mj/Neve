@@ -6,9 +6,9 @@
 
     ./bufferlines/bufferline.nix
 
-    ./colorschemes/base16.nix
-    ./colorschemes/catppuccin.nix
-    ./colorschemes/rose-pine.nix
+#     ./colorschemes/base16.nix
+#     ./colorschemes/catppuccin.nix
+#     ./colorschemes/rose-pine.nix
 
     ./completion/cmp.nix
     ./completion/copilot.nix
