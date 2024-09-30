@@ -45,16 +45,16 @@
         desc = "Disable Left arrow key";
       };
     }
-    {
-      mode = ["i"];
-      key = "xd";
-      action = "<Esc>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "While in insert mode, exit";
-      };
-    }
+# { # TODO: Figure out how to set this
+#   mode = ["i"];
+#   key = "xd";
+#   action = "<Esc>";
+#   options = {
+#     silent = true;
+#     noremap = true;
+#     desc = "While in insert mode, exit";
+#   };
+# }
     # Tabs
     {
       mode = "n";
