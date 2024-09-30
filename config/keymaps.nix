@@ -48,7 +48,7 @@
     {
       mode = ["i"];
       key = "<Esc>";
-      action = "jk";
+      action = "<S-x><S-d>";
       options = {
         silent = true;
         noremap = true;
