@@ -47,7 +47,7 @@
     }
     {
       mode = ["i"];
-      key = "<S-x><S-d>";
+      key = "XD";
       action = "<C-c>";
       options = {
         silent = true;
