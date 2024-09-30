@@ -1,6 +1,6 @@
 {
   colorschemes = {
-    cyberdream = {
+    kanagawa = {
       enable = true;
     };
   };
