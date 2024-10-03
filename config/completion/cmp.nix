@@ -2,13 +2,12 @@
   plugins = {
     cmp-nvim-lsp = {enable = true;}; # lsp
     cmp-buffer = {enable = true;};
-    copilot-cmp = {enable = true;}; # copilot suggestions
     cmp-path = {enable = true;}; # file system paths
     cmp_luasnip = {enable = true;}; # snippets
     cmp-cmdline = {enable = false;}; # autocomplete for cmdline
     cmp = {
       enable = true;
-      autoEnableSources = false;
+      autoEnableSources = true;
       settings = {
         experimental = {
           ghost_text = true;
@@ -76,7 +75,6 @@
           __raw = ''
             cmp.config.sources({
               {name = 'nvim_lsp'},
-              {name = 'copilot'},
               {name = 'path'},
               {name = 'luasnip'},
               {name = 'cmdline'},
