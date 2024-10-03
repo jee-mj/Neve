@@ -1,7 +1,7 @@
 {
   colorschemes = {
     cyberdream = {
-      enable = false;
+      enable = true;
     };
   };
 }

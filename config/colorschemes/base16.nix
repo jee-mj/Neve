@@ -1,7 +1,7 @@
 {
   colorschemes = {
     base16 = {
-      enable = false;
+      enable = true;
       colorscheme = "solarized-dark";
     };
   };
