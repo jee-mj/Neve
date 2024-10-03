@@ -32,11 +32,11 @@
           };
         };
 
-        theme = "dragon";    # Load "wave" theme by default
+        theme = "dragon";
 
         background = {
-          dark = "dragon";    # Set the dark theme to "wave"
-          light = "lotus";  # Set the light theme to "lotus"
+          dark = "dragon";           # Set the dark theme to "wave"
+          light = "lotus";           # Set the light theme to "lotus"
         };
       };
     };

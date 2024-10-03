@@ -171,6 +171,9 @@
         pickers = {
           colorscheme = {
             enable_preview = true
+          },
+          find_files = {
+            hidden = true
           }
         }
     }

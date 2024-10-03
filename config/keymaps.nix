@@ -45,6 +45,16 @@
         desc = "Disable Left arrow key";
       };
     }
+# { # TODO: Figure out how to set this
+#   mode = ["i"];
+#   key = "xd";
+#   action = "<Esc>";
+#   options = {
+#     silent = true;
+#     noremap = true;
+#     desc = "While in insert mode, exit";
+#   };
+# }
     # Tabs
     {
       mode = "n";
@@ -52,7 +62,7 @@
       action = "<cmd>tablast<cr>";
       options = {
         silent = true;
-        desc = "Last tab";
+        desc = "Go to the last tab";
       };
     }
 
@@ -62,7 +72,7 @@
       action = "<cmd>tabfirst<cr>";
       options = {
         silent = true;
-        desc = "First Tab";
+        desc = "Go to the first Tab";
       };
     }
 
@@ -72,7 +82,7 @@
       action = "<cmd>tabnew<cr>";
       options = {
         silent = true;
-        desc = "New Tab";
+        desc = "Open a new Tab";
       };
     }
 
@@ -82,7 +92,7 @@
       action = "<cmd>tabnext<cr>";
       options = {
         silent = true;
-        desc = "Next Tab";
+        desc = "Go to the next Tab";
       };
     }
 
@@ -102,50 +112,50 @@
       action = "<cmd>tabprevious<cr>";
       options = {
         silent = true;
-        desc = "Previous Tab";
+        desc = "Go to the previous Tab";
       };
     }
 
     # Windows
-    {
-      mode = "n";
-      key = "<leader>ww";
-      action = "<C-W>p";
-      options = {
-        silent = true;
-        desc = "Other window";
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>ww";
+    #   action = "<C-W>p";
+    #   options = {
+    #     silent = true;
+    #     desc = "Switch to other window";
+    #   };
+    # }
 
-    {
-      mode = "n";
-      key = "<leader>wd";
-      action = "<C-W>c";
-      options = {
-        silent = true;
-        desc = "Delete window";
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>wd";
+    #   action = "<C-W>c";
+    #   options = {
+    #     silent = true;
+    #     desc = "Delete window";
+    #   };
+    # }
 
-    {
-      mode = "n";
-      key = "<leader>w-";
-      action = "<C-W>s";
-      options = {
-        silent = true;
-        desc = "Split window below";
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>w-";
+    #   action = "<C-W>s";
+    #   options = {
+    #     silent = true;
+    #     desc = "Split window below";
+    #   };
+    # }
 
-    {
-      mode = "n";
-      key = "<leader>w|";
-      action = "<C-W>v";
-      options = {
-        silent = true;
-        desc = "Split window right";
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>w|";
+    #   action = "<C-W>v";
+    #   options = {
+    #     silent = true;
+    #     desc = "Split window right";
+    #   };
+    # }
 
     # {
     #   mode = "n";
@@ -173,7 +183,7 @@
       action = "<cmd>w<cr><esc>";
       options = {
         silent = true;
-        desc = "Save file";
+        desc = "Save the current file";
       };
     }
 
@@ -184,7 +194,7 @@
       action = "<cmd>quitall<cr><esc>";
       options = {
         silent = true;
-        desc = "Quit all";
+        desc = "Quit all sessions";
       };
     }
 
