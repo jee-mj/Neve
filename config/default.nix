@@ -13,8 +13,9 @@
     ./colorschemes/rose-pine.nix
 
     ./completion/cmp.nix
-    ./completion/copilot.nix
+    # ./completion/copilot.nix
     ./completion/lspkind.nix
+    ./completion/emmet.nix
 
     ./dap/dap.nix
 
@@ -24,7 +25,7 @@
     ./git/lazygit.nix
     ./git/neogit.nix
 
-    ./languages/nvim-jdtls.nix
+    # ./languages/nvim-jdtls.nix
     ./languages/nvim-lint.nix
     ./languages/typescript-tools-nvim.nix
     ./languages/treesitter/treesitter.nix
