@@ -1,0 +1,62 @@
+{
+  lib,
+  config,
+  ...
+}: {
+  options = {
+    kanagawa.enable = lib.mkEnableOption "Enable kanagawa module";
+  };
+  config = lib.mkIf config.kanagawa.enable {
+    colorschemes = {
+      kanagawa = {
+        enable = true;
+
+        settings = {
+          compile = false; # enable compiling the colorscheme
+          undercurl = true; # enable undercurls
+          commentStyle = {italic = true;};
+          functionStyle = {};
+          keywordStyle = {italic = true;};
+          statementStyle = {bold = true;};
+          typeStyle = {};
+          transparent = false; # do not set background color
+          dimInactive = false; # dim inactive window
+          terminalColors = true; # define vim.g.terminal_color_{0,17}
+
+          colors = {
+            palette = {
+              sumiInk0 = "#000";
+              fujiWhite = "#FFF";
+            };
+            theme = {
+              wave = {
+                ui = {
+                  float = {
+                    bg = "none";
+                  };
+                };
+              };
+              dragon = {
+                syn = {
+                  parameter = "yellow";
+                };
+              };
+              all = {
+                ui = {
+                  bg_gutter = "none";
+                };
+              };
+            };
+          };
+
+          theme = "dragon";
+
+          background = {
+            dark = "dragon";
+            light = "lotus";
+          };
+        };
+      };
+    };
+  };
+}

@@ -2,8 +2,7 @@
   lib,
   config,
   ...
-}:
-{
+}: {
   options = {
     set.enable = lib.mkEnableOption "Enable set module";
   };
@@ -84,9 +83,9 @@
       scrolloff = 8;
 
       # Place a column line
-      colorcolumn = "80";
+      # colorcolumn = "80";
 
-      # Reduce which-key timeout 
+      # Reduce which-key timeout
       timeoutlen = 200;
 
       # Set encoding type
@@ -142,7 +141,7 @@
         g.neovide_transparency = 0.8
 
         -- Neovide Fonts
-        o.guifont = "JetBrainsMono Nerd Font:h14:Medium:i"
+        o.guifont = "0xProto Nerd Font:h14:Medium:i"
       end
     '';
   };
