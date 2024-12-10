@@ -12,7 +12,7 @@
         enable = true;
 
         settings = {
-          compile = false; # enable compiling the colorscheme
+          compile = true; # enable compiling the colorscheme
           undercurl = true; # enable undercurls
           commentStyle = {italic = true;};
           functionStyle = {};
@@ -51,10 +51,10 @@
 
           theme = "dragon";
 
-          background = {
-            dark = "none";
-            light = "lotus";
-          };
+          # background = {
+          #   dark = "dragon";
+          #   light = "lotus";
+          # };
         };
       };
     };
