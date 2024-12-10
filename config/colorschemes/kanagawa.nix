@@ -25,8 +25,8 @@
 
           colors = {
             palette = {
-              sumiInk0 = "#000";
-              fujiWhite = "#FFF";
+              sumiInk0 = "#000000";
+              fujiWhite = "#FFFFFF";
             };
             theme = {
               wave = {
