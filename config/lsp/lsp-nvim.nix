@@ -18,6 +18,11 @@
           clangd = {
             enable = true;
           };
+          intelephense = {
+            enable = true;
+            filetypes = [ "php" ];
+            autostart = true;
+          };
           lua_ls = {
             enable = true;
             extraOptions = {
@@ -40,11 +45,23 @@
               };
             };
           };
+          move_analyzer = {
+            enable = true;
+            autostart = true;
+            filetypes = [ "move" ];
+          };
+          nginx_language_server = {
+            enable = true;
+          };
           nil_ls = {
             enable = false;
           };
           nixd = {
             enable = true;
+          };
+          omnisharp = {
+            enable = true;
+            autostart = true;
           };
           ts_ls = {
             enable = true;
