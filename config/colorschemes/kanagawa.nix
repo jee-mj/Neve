@@ -38,7 +38,7 @@
               };
               dragon = {
                 syn = {
-                  parameter = "yellow";f
+                  parameter = "yellow";
                 };
               };
               all = {
