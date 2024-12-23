@@ -38,7 +38,7 @@
               };
               dragon = {
                 syn = {
-                  parameter = "yellow";
+                  parameter = "yellow";f
                 };
               };
               all = {
@@ -49,7 +49,7 @@
             };
           };
 
-          theme = "dragon";
+          theme = "lotus";
 
           # background = {
           #   dark = "dragon";

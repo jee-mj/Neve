@@ -20,7 +20,7 @@
           };
           intelephense = {
             enable = true;
-            filetypes = [ "php" ];
+            filetypes = ["php"];
             autostart = true;
           };
           lua_ls = {
@@ -44,11 +44,6 @@
                 };
               };
             };
-          };
-          move_analyzer = {
-            enable = true;
-            autostart = true;
-            filetypes = [ "move" ];
           };
           nginx_language_server = {
             enable = true;
