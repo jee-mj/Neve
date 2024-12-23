@@ -18,11 +18,10 @@
           clangd = {
             enable = true;
           };
-          intelephense = {
+          phpactor = {
             enable = true;
             filetypes = ["php"];
             autostart = true;
-            package = pkgs.intelephense;
           };
           lua_ls = {
             enable = true;
