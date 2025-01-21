@@ -6,6 +6,7 @@
   imports = [
     ./better-escape.nix
     ./cloak.nix
+    ./chat-gpt.nix
     ./harpoon.nix
     ./markdown-preview.nix
     ./mini.nix
@@ -34,6 +35,7 @@
   };
   config = lib.mkIf config.utils.enable {
     better-escape.enable = lib.mkDefault true;
+    chatgpt.enable = lib.mkDefault true;
     cloak.enable = lib.mkDefault true;
     harpoon.enable = lib.mkDefault true;
     markdown-preview.enable = lib.mkDefault false;

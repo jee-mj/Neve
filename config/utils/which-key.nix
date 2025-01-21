@@ -115,6 +115,135 @@
             mode = "n";
             group = "+windows";
           }
+
+          # ChatGPT Mappings
+          {
+            __unkeyed-1 = "<leader>cc";
+            mode = "n";
+            command = "<cmd>ChatGPT<CR>";
+            group = "ChatGPT";
+            description = "ChatGPT";
+          }
+          {
+            __unkeyed-1 = "<leader>ce";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTEditWithInstruction<CR>";
+            group = "ChatGPT";
+            description = "Edit with instruction";
+          }
+          {
+            __unkeyed-1 = "<leader>cg";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun grammar_correction<CR>";
+            group = "ChatGPT";
+            description = "Grammar Correction";
+          }
+          {
+            __unkeyed-1 = "<leader>ct";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun translate<CR>";
+            group = "ChatGPT";
+            description = "Translate";
+          }
+          {
+            __unkeyed-1 = "<leader>ck";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun keywords<CR>";
+            group = "ChatGPT";
+            description = "Keywords";
+          }
+          {
+            __unkeyed-1 = "<leader>cd";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun docstring<CR>";
+            group = "ChatGPT";
+            description = "Docstring";
+          }
+          {
+            __unkeyed-1 = "<leader>ca";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun add_tests<CR>";
+            group = "ChatGPT";
+            description = "Add Tests";
+          }
+          {
+            __unkeyed-1 = "<leader>co";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun optimize_code<CR>";
+            group = "ChatGPT";
+            description = "Optimize Code";
+          }
+          {
+            __unkeyed-1 = "<leader>cs";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun summarize<CR>";
+            group = "ChatGPT";
+            description = "Summarize";
+          }
+          {
+            __unkeyed-1 = "<leader>cf";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun fix_bugs<CR>";
+            group = "ChatGPT";
+            description = "Fix Bugs";
+          }
+          {
+            __unkeyed-1 = "<leader>cx";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun explain_code<CR>";
+            group = "ChatGPT";
+            description = "Explain Code";
+          }
+          {
+            __unkeyed-1 = "<leader>cr";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun roxygen_edit<CR>";
+            group = "ChatGPT";
+            description = "Roxygen Edit";
+          }
+          {
+            __unkeyed-1 = "<leader>cl";
+            mode = [
+              "n"
+              "v"
+            ];
+            command = "<cmd>ChatGPTRun code_readability_analysis<CR>";
+            group = "ChatGPT";
+            description = "Code Readability Analysis";
+          }
         ];
         win = {
           border = "none";
@@ -124,3 +253,4 @@
     };
   };
 }
+
