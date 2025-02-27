@@ -16,10 +16,10 @@
         capabilities = "offsetEncoding = 'utf-16'";
         servers = {
           clangd = {
-            enable = true;
+            enable = false;
           };
           phpactor = {
-            enable = true;
+            enable = false;
             filetypes = ["php"];
             autostart = true;
           };
@@ -46,16 +46,16 @@
             };
           };
           nginx_language_server = {
-            enable = true;
+            enable = false;
           };
           nil_ls = {
             enable = false;
           };
           nixd = {
-            enable = true;
+            enable = false;
           };
           omnisharp = {
-            enable = true;
+            enable = false;
             autostart = true;
           };
           ts_ls = {
@@ -107,7 +107,7 @@
           };
 
           rust_analyzer = {
-            enable = true;
+            enable = false;
             installCargo = true;
             installRustc = true;
             settings = {
