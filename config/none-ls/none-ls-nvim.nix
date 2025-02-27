@@ -42,7 +42,7 @@
         };
         formatting = {
           alejandra = {
-            enable = false;
+            enable = true;
           };
           nixfmt = {
             enable = true;
