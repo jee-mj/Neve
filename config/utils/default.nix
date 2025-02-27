@@ -51,7 +51,7 @@
     plenary.enable = lib.mkDefault true;
     project-nvim.enable = lib.mkDefault true;
     sidebar.enable = lib.mkDefault false;
-    tmux-navigator.enable = lib.mkDefault true;
+    tmux-navigator.enable = lib.mkDefault false;
     todo-comments.enable = lib.mkDefault true;
     ultimate-autopair.enable = lib.mkDefault true;
     undotree.enable = lib.mkDefault true;
