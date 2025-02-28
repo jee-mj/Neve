@@ -24,7 +24,7 @@
         };
         ensure_installed = [
           "bash"
-          "c"
+          #"c"
           "html"
           "css"
           "javascript"
@@ -34,8 +34,8 @@
           "luadoc"
           "luap"
           "nix"
-          "rust"
-          "java"
+          #"rust"
+          #"java"
           "markdown"
           "markdown_inline"
           "python"
