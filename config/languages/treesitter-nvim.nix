@@ -47,6 +47,7 @@
           "vimdoc"
           "toml"
           "yaml"
+          "c_sharp"
         ];
         auto_install = true;
         incremental_selection = {

@@ -57,6 +57,16 @@
           omnisharp = {
             enable = true;
             autostart = true;
+            settings = {
+              RoslynExtensionsOptions = {
+                enableAnalyzersSupport = true;
+                organizeImportsOnFormat = true;
+              };
+              FormattingOptions = {
+                OrganizeImports = true;
+                AutoFormatting = true;
+              };
+            };
           };
           ts_ls = {
             enable = true;

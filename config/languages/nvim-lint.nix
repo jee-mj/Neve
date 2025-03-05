@@ -24,6 +24,7 @@
         java = ["checkstyle"];
         haskell = ["hlint"];
         bash = ["shellcheck"];
+        cs = ["omnisharp"];
       };
     };
   };
