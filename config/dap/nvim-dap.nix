@@ -31,6 +31,20 @@
               port = 5005;
             }
           ];
+          csharp = [
+            {
+              type = "coreclr";
+              request = "launch";
+              name = "Launch .NET Core";
+              program = ''
+                return vim.fn.input("Path to DLL: ", vim.fn.getcwd() .. "/bin/Debug/", "file")
+              '';
+              args = {};
+              cwd = "$${workspaceFolder}";
+              stopOnEntry = false;
+              console = "integratedTerminal";
+            }
+          ];
         };
       };
       dap-virtual-text = {
@@ -228,6 +242,15 @@
         options = {
           silent = true;
           desc = "Eval";
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>nr";
+        action = "<cmd>!dotnet restore<CR>";
+        options = {
+          silent = true;
+          desc = "Restore NuGet packages";
         };
       }
     ];

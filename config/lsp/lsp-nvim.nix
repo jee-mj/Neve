@@ -40,6 +40,33 @@
           nixd = {
             enable = true;
           };
+          statix = {
+            enable = true;
+            filetypes = ["nix"];
+          };
+          phpactor = {
+            enable = true;
+            filetypes = ["php"];
+            autostart = true;
+          };
+          nginx_language_server = {
+            enable = true;
+          };
+          omnisharp = {
+            enable = true;
+            filetypes = ["cs" "cshtml" "razor" "csproj" "sln"];
+            autostart = true;
+            settings = {
+              RoslynExtensionsOptions = {
+                enableAnalyzersSupport = true;
+                organizeImportsOnFormat = true;
+              };
+              FormattingOptions = {
+                OrganizeImports = true;
+                AutoFormatting = true;
+              };
+            };
+          };
           ts_ls = {
             enable = true;
             autostart = true;
@@ -80,9 +107,11 @@
           };
           eslint = {
             enable = true;
+            filetypes = ["js" "jsx" "ts" "tsx"];
           };
           pyright = {
             enable = true;
+            filetypes = ["py"];
           };
           ruff = {
             enable = true;

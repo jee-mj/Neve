@@ -22,6 +22,7 @@
         ensure_installed = [
           "bash"
           "c"
+          "c_sharp"
           "html"
           "css"
           "javascript"

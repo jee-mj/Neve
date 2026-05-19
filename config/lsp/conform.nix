@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ lib, config, pkgs, ... }:
 {
   options = {
     conform.enable = lib.mkEnableOption "Enable conform module";
@@ -24,7 +24,18 @@
             return { timeout_ms = 500, lsp_format = 'fallback' }
           end
         '';
+        default_format_opts = {
+          lsp_format = "fallback";
+        };
         formatters_by_ft = {
+          "_" = [
+            "squeeze_blanks"
+            "trim_whitespace"
+            "trim_newlines"
+          ];
+          bash = ["shellcheck" "shellharden" "shfmt"];
+          cs = ["omnisharp"];
+          cpp = ["clang_format"];
           html = {
             __unkeyed-1 = "prettierd";
             __unkeyed-2 = "prettier";
@@ -35,6 +46,8 @@
             __unkeyed-2 = "prettier";
             stop_after_first = true;
           };
+          sass = ["sass" "scss"];
+          scss = ["scss" "sass"];
           javascript = {
             __unkeyed-1 = "prettierd";
             __unkeyed-2 = "prettier";
@@ -65,6 +78,41 @@
             stop_after_first = true;
           };
           rust = [ "rustfmt" ];
+        };
+        formatters = {
+          shellcheck = {
+            command = lib.getExe pkgs.shellcheck;
+          };
+          shfmt = {
+            command = lib.getExe pkgs.shfmt;
+          };
+          shellharden = {
+            command = lib.getExe pkgs.shellharden;
+          };
+          squeeze_blanks = {
+            command = lib.getExe' pkgs.coreutils "cat";
+          };
+          prettierd = {
+            command = lib.getExe pkgs.prettierd;
+          };
+          statix = {
+            command = lib.getExe pkgs.statix;
+          };
+          stylua = {
+            command = lib.getExe pkgs.stylua;
+          };
+          black = {
+            command = lib.getExe pkgs.black;
+          };
+          sass = {
+            command = lib.getExe pkgs.sass;
+          };
+          scss = {
+            command = lib.getExe pkgs.scss-lint;
+          };
+          omnisharp = {
+            command = lib.getExe pkgs.omnisharp-roslyn;
+          };
         };
       };
     };
