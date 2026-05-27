@@ -17,6 +17,7 @@
     }@inputs:
     let
       config = import ./config; # import the module directly
+      liteConfig = import ./config/lite.nix; # minimal Lua-only config
       # Enable unfree packages
       nixpkgsConfig = {
         allowUnfree = true;
@@ -42,6 +43,13 @@
             inherit self;
           };
         };
+        nvimLite = nixvim'.makeNixvimWithModule {
+          inherit pkgs;
+          module = liteConfig;
+          extraSpecialArgs = {
+            inherit self;
+          };
+        };
       in
       {
         checks = {
@@ -62,6 +70,9 @@
         packages = {
           # Lets you run `nix run .` to start nixvim
           default = nvim;
+
+          # Minimal Lua-only Neve for music workstations
+          lite = nvimLite;
 
           # Wrapped with Lua runtimepath fix for Neovim 0.12
           wrapped = pkgs.symlinkJoin {
